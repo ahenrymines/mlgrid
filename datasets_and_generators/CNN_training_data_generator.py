@@ -418,5 +418,5 @@ for i in range(range_size):
     and that the format it is being saved in is consistent; refer to functions 
     grabCNNdata() and append_to_json().
     '''
-    append_to_json(grabCNNdata(grids[0], xpix), '../datasets_and_generators/CNN_trainingimages_MASTER.json')
-    append_to_json(s, '../datasets_and_generators/CNN_traininglabels_MASTER.json')
+    append_to_json(grabCNNdata(grids[0], xpix), 'C:/Users/Alessandro Henry/Documents/GitHub/mlgrid/datasets_and_generators/CNN_trainingimages_MASTER.json')
+    append_to_json(s, 'C:/Users/Alessandro Henry/Documents/GitHub/mlgrid/datasets_and_generators/CNN_traininglabels_MASTER.json')

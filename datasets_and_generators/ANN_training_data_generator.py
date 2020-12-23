@@ -325,7 +325,7 @@ def append_to_json(_dict, path):
 
 
 # main---------------------------------------------
-range_size = 5  # USER DEFINED: number of data points to be added to CNN data set
+range_size = 10  # USER DEFINED: number of data points to be added to CNN data set
 if __name__ == '__main__':
     for i in range(range_size):
         '''
@@ -436,7 +436,7 @@ if __name__ == '__main__':
                 scheme = mc.Quantiles(street['count'], k=20)
                 gplt.choropleth(street, ax=ax, hue='count', legend=True, scheme=scheme, cmap="jet",
                                 legend_kwargs={'bbox_to_anchor': (1, 0.9)})
-                plt.savefig('../datasets_and_generators/ANN_trainimages/x_' + str(i) + '.png')
+                plt.savefig('C:/Users/Alessandro Henry/Documents/GitHub/mlgrid/datasets_and_generators/ANN_trainimages/x_' + str(i) + '.png')
                 plt.close()
 
         '''
@@ -450,4 +450,4 @@ if __name__ == '__main__':
         and that the format it is being saved in is consistent; refer to functions 
         grabANNdata() and append_to_json().
         '''
-        append_to_json(grabANNdata(grids[0]), '../datasets_and_generators/ANN_trainingdata_MASTER.json')
+        append_to_json(grabANNdata(grids[0]), 'C:/Users/Alessandro Henry/Documents/GitHub/mlgrid/datasets_and_generators/ANN_trainingdata_MASTER.json')
